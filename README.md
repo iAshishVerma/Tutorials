@@ -15,3 +15,12 @@ creat a custom theme to apply for specific activity
     </style>
 
 </resources>
+
+
+
+#Making Status Bar translucent
+
+put it in your theme 
+
+<item name="android:windowTranslucentStatus">true</item>
+<item name="android:windowTranslucentNavigation">true</item>
