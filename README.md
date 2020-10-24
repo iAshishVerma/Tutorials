@@ -24,3 +24,21 @@ put it in your theme
 
 <item name="android:windowTranslucentStatus">true</item>
 <item name="android:windowTranslucentNavigation">true</item>
+
+
+
+Putting Back Button on tool bar 
+getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+getSupportActionBar().setDisplayShowHomeEnabled(true);
+put above in onCreat()
+
+and following method outside of oncreat
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    if (item.getItemId() == android.R.id.home) {
+        finish();
+    }
+    return super.onOptionsItemSelected(item);
+}
+
+The arrow is swt by default
